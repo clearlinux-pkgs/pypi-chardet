@@ -4,7 +4,7 @@
 #
 Name     : pypi-chardet
 Version  : 4.0.0
-Release  : 63
+Release  : 64
 URL      : https://files.pythonhosted.org/packages/ee/2d/9cdc2b527e127b4c9db64b86647d567985940ac3698eeabc7ffaccb4ea61/chardet-4.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/ee/2d/9cdc2b527e127b4c9db64b86647d567985940ac3698eeabc7ffaccb4ea61/chardet-4.0.0.tar.gz
 Summary  : Universal encoding detector for Python 2 and 3
@@ -14,9 +14,6 @@ Requires: pypi-chardet-license = %{version}-%{release}
 Requires: pypi-chardet-python = %{version}-%{release}
 Requires: pypi-chardet-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-Provides: chardet
-Provides: chardet-python
-Provides: chardet-python3
 
 %description
 --------------------------------------------------
@@ -57,7 +54,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641422251
+export SOURCE_DATE_EPOCH=1649726422
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
