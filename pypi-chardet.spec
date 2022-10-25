@@ -4,7 +4,7 @@
 #
 Name     : pypi-chardet
 Version  : 5.0.0
-Release  : 72
+Release  : 73
 URL      : https://files.pythonhosted.org/packages/31/a2/12c090713b3d0e141f367236d3a8bdc3e5fca0d83ff3647af4892c16c205/chardet-5.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/31/a2/12c090713b3d0e141f367236d3a8bdc3e5fca0d83ff3647af4892c16c205/chardet-5.0.0.tar.gz
 Summary  : Universal encoding detector for Python 3
@@ -58,7 +58,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1656342564
+export SOURCE_DATE_EPOCH=1666739302
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
@@ -80,7 +80,7 @@ popd
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/pypi-chardet
-cp %{_builddir}/chardet-5.0.0/LICENSE %{buildroot}/usr/share/package-licenses/pypi-chardet/01a6b4bf79aca9b556822601186afab86e8c4fbf
+cp %{_builddir}/chardet-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/pypi-chardet/01a6b4bf79aca9b556822601186afab86e8c4fbf || :
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
