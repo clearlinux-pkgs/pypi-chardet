@@ -4,7 +4,7 @@
 #
 Name     : pypi-chardet
 Version  : 5.0.0
-Release  : 71
+Release  : 72
 URL      : https://files.pythonhosted.org/packages/31/a2/12c090713b3d0e141f367236d3a8bdc3e5fca0d83ff3647af4892c16c205/chardet-5.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/31/a2/12c090713b3d0e141f367236d3a8bdc3e5fca0d83ff3647af4892c16c205/chardet-5.0.0.tar.gz
 Summary  : Universal encoding detector for Python 3
